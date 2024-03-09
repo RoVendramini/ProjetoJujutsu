@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: yellow;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 45px;
+    background: #1d1d2e;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 30px;
+    background-color: #1d1d2e;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1d1d2e;
+}
+
+label {
+    font-size: 18px;
+    margin: 4px;
+    background-color: #1d1d2e;
+}
+
+input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: black;
+    background: white;
+}
+
+textarea {
+    padding: 20px;
+    outline: none;
+    border: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: black;
+    background: white;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid white;
+    margin-bottom: 10px;
+    transition: 0.8s;
+}
+
+button:hover {
+    color: black;
+    background-color: #d21617;
+}
+
+.poster {
+    margin-top: 50px;
+    height: 40%;
+    width: 50%;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.poster:hover {
+    transform: scale(1.02);
+}
+
+#image {
+    background-size: auto;
+    height: 700px;
+    width: 80%;
+    border-radius: 5px;
+
+}
+
+@media (max-width: 768px) {
+    .poster {
+        display: none;
+    }
+}

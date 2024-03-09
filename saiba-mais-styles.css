@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    color: yellow;
+    font-family:'Kdam Thmor Pro', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://image.api.playstation.com/vulcan/ap/rnd/202309/2722/80a0414e5cec24a74ca09b4abb1ab2b88914f13b9da081a1.png);
+    background-size: 100% 100%;
+
+
+}
+
+h1 {
+    background-color: transparent;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 50px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: column;
+    justify-content: space-around;
+}
+
+.main {
+    width: 50%;
+    background-color: #10102650;
+}
+
+.second {
+    width: 30%;
+    height: 250px;
+    background-color: #10102650;
+}
+
+h2 {
+    background-color: transparent;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+@media (max-width: 1240px) {
+    body {
+        background: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }
+
+    .main {
+        width: 90%;
+    }
+
+    .second {
+        width: 90%;
+    }
+}

@@ -1,0 +1,69 @@
+.contain-screens {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.screens {
+    margin-top: 30px;
+    width: 90%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.screen {
+    transition: 1s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.screen:hover {
+    transform: scale(1.02);
+}
+
+.img-1 {
+    background-image: url(https://jovemnerd.com.br/_next/image?url=https%3A%2Fuploads.jovemnerd.com.br%2Fwp-content%2Fuploads%2F2022%2F03%2Fjujutsu-kaisen-o-estreia-adiada-brasil.jpg&w=1920&q=75);
+    background-size: 100% 100%;
+}
+
+.img-2 {
+    background-image: url(https://static.animecorner.me/2021/09/jujutsu-gojo-satoru-movie.jpg);
+    background-size: 100% 100%;
+}
+
+.img-3 {
+    background-image: url(https://nerdetcetera.com/assets/images/UEjDDwnPKoIl8nQd4sMObE2Ccxf-MGU4CKGII8LYoj9rcP7gAHzEt.jpeg);
+    background-size: 100% 100%;
+}
+
+.img-4 {
+    background-image: url(https://kanto.legiaodosherois.com.br/w1200-q95-k1/wp-content/uploads/2022/02/legiao_OJRYrKUQs4qu.jpg.webp);
+    background-size: 100% 100%;
+}
+
+.img-5 {
+    background-image: url(https://kanto.legiaodosherois.com.br/w1200-q95-k1/wp-content/uploads/2022/04/legiao_ecb5LDIur60i.jpg.webp);
+    background-size: 100% 100%;
+}
+
+.img-6 {
+    background-image: url(https://comicvine.gamespot.com/a/uploads/original/11132/111324838/9042445-88909127_p0_master1200.jpg);
+    background-size: 100% 100%;
+}
+
+@media (max-width: 768px) {
+    .screens {
+        height: 900px;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1540px) {
+    .screens {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
